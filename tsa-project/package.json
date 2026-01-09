@@ -2,7 +2,7 @@
   "name": "tsa-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://L0G4N2.github.io/Webmaster25-26",
+  "homepage": "https://l0g4n2.github.io/Webmaster25-26",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
