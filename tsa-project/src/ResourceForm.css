@@ -1,0 +1,13 @@
+/* Resource Form Component Styles */
+.resource-form {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.resource-form h2 {
+  margin-top: 0;
+  text-align: center;
+}

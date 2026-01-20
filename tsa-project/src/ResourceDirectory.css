@@ -1,0 +1,33 @@
+/* Resource Directory Component Styles */
+.resource-directory {
+  margin: 20px 0;
+}
+
+.search-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.search-filter input,
+.search-filter select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Responsive styles for ResourceDirectory */
+@media (max-width: 768px) {
+  .search-filter {
+    flex-direction: column;
+  }
+
+  .search-filter input,
+  .search-filter select {
+    min-width: auto;
+    width: 100%;
+  }
+}

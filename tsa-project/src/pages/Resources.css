@@ -1,0 +1,246 @@
+/* Resources Page Styles */
+.resources-page {
+  min-height: calc(100vh - 140px);
+  background-color: #4073a5;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.resources-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.resources-header h1 {
+  font-size: 3rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.resources-header p {
+  font-size: 1.3rem;
+  color: #4a5568;
+  margin: 0;
+}
+
+.resources-controls {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.category-filter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.category-filter label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.category-filter select {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  background: rgb(120, 79, 195);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.category-filter select:focus {
+  outline: none;
+  border-color: #1e40af;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #e5e7eb;
+}
+
+.view-toggle button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #6b7280;
+}
+
+.view-toggle button:hover {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.view-toggle button.active {
+  background: #1e40af;
+  color: white;
+}
+
+.resources-content {
+  margin-bottom: 3rem;
+}
+
+.resources-list,
+.resources-map {
+  background: rgb(179, 67, 67);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.resources-summary,
+.map-info {
+  padding: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f8fafc;
+}
+
+.resources-summary h3,
+.map-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1e40af;
+  font-size: 1.5rem;
+}
+
+.resources-summary p,
+.map-info p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.add-resource-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-resource-section h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.add-resource-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-resource-btn {
+  background: white;
+  color: #1e40af;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-resource-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .resources-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .resources-header p {
+    font-size: 1.1rem;
+  }
+
+  .resources-controls {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.5rem;
+  }
+
+  .category-filter {
+    justify-content: center;
+  }
+
+  .view-toggle {
+    justify-content: center;
+  }
+
+  .view-toggle button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .resources-summary,
+  .map-info {
+    padding: 1.5rem;
+  }
+
+  .add-resource-section {
+    padding: 2rem 1rem;
+  }
+
+  .add-resource-section h2 {
+    font-size: 2rem;
+  }
+
+  .add-resource-section p {
+    font-size: 1rem;
+  }
+}
+
+.resource-form-section {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+@media (max-width: 480px) {
+  .resources-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .resources-controls {
+    padding: 1rem;
+  }
+
+  .view-toggle button {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+}

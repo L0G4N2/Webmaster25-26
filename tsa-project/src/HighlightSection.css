@@ -1,0 +1,47 @@
+/* Highlight Section Component Styles */
+.highlight-section {
+  margin: 20px 0;
+}
+
+.resource-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-around;
+}
+
+.resource-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.resource-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.resource-card p {
+  margin: 8px 0;
+}
+
+.resource-card em {
+  color: #666;
+  font-style: italic;
+}
+
+/* Responsive styles for HighlightSection */
+@media (max-width: 768px) {
+  .resource-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resource-card {
+    max-width: 100%;
+  }
+}
